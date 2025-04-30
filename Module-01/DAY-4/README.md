@@ -30,14 +30,31 @@ RegisterNumber:
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
+```
+import java.util.*;
+public class Area {
+       {{     void calculateArea()
+    {  
+        int side1,side2;
+        double cirarea;
+        side1=10;
+        side2=20;
+        cirarea=side1*side2;
+        System.out.println("Area of Rectangle is "+cirarea);
+    }
+    
+   }}
+       public static void main(String[] args) {
+       Area obj=new Area();
+       obj.calculateArea();
+       }
+}
+  
+```
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/8ca11018-5109-4dcf-8674-6285d2ea666f)
 
 
 
