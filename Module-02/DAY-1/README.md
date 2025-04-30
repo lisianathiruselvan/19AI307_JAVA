@@ -1,43 +1,51 @@
 # Ex.No:2(A)  STATIC METHOD
 
 ## AIM:
-To create a java program for calculate cube of a number using static method.
+To Determine if the number is a multiple of 10 using staticmethod 
 
 ## ALGORITHM :
-1.  Start : Begin the process of calculating the cube of a number.
-2.	Declare a variable to store input : Declare an integer variable n to hold the number whose cube will be calculated.
-3.	Create a Scanner object : Create a Scanner object (sc) to read the input from the user.
-4.	Read input from the user : Prompt the user to input an integer value. The input value is stored in the variable n.
-5.	Call the cubecal function : Call the function cubecal(n) which computes the cube of the number by performing n * n * n.
-6.	Store the result : Store the result of the cubecal function in an integer variable result.
-7.	Output the result :
-8.	Print the cube of the number using System.out.println("Cube is: " + result);.
-9.	End the program.
-
-
-
+1. Start the program.
+2. Read an integer input from the user.
+3. Check if the number is divisible by 10 using the modulus operator.
+4. If divisible, print "number is a multiple of 10."
+5. Else, print "number is not a multiple of 10."
+6. End the program.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Static method using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.Scanner;
 
-
-
-
-
+public class MultipleCheck {
+    static boolean isMultipleOfTen(int num) {
+        return num % 10 == 0;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if (isMultipleOfTen(num)) {
+            System.out.println(num + " is a multiple of 10.");
+        } else {
+            System.out.println(num + " is not a multiple of 10.");
+        }
+    }
+}
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/0e359754-fe37-4d95-8947-720d90ddccbe)
 
 
 ## RESULT:
-Thus the java program for calculate cube of a number using static method has been executed successfully.
+Thus the java program To Determine if the number is a multiple of 10 using static method has been executed successfully.
 
