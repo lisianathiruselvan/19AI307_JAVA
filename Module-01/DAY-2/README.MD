@@ -53,6 +53,7 @@ public class Demo{
 ```
 
 ## OUTPUT:
+
 ![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/main/Module-01/DAY-2/Screenshot%202025-04-30%20101128.png)
 
 ## RESULT:
