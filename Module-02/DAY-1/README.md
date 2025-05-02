@@ -1,15 +1,37 @@
 # Ex.No:2(A)  STATIC METHOD
 
 ## AIM:
-To Determine if the number is a multiple of 10 using staticmethod 
+To create a java program for Reverse a Number Using static function
 
 ## ALGORITHM :
-1. Start the program.
-2. Read an integer input from the user.
-3. Check if the number is divisible by 10 using the modulus operator.
-4. If divisible, print "number is a multiple of 10."
-5. Else, print "number is not a multiple of 10."
-6. End the program.
+1.Start
+
+2.Define a method reverse(int num)
+
+3.Initialize revnum = 0
+
+4.Repeat while num is not equal to 0:
+
+5.Extract the last digit using digit = num % 10
+
+6.Update revnum = revnum * 10 + digit
+
+7.Remove the last digit from num using num = num / 10
+
+8.Return revnum
+
+9.In the main method:
+
+10.Create a Scanner object to read input.
+
+11.Read an integer from the user and store in num.
+
+12.Call reverse(num) and store result in revnumber.
+
+13.Print "Reversed number: " followed by revnumber.
+
+14.End
+
 
 ## PROGRAM:
  ```
@@ -21,31 +43,36 @@ RegisterNumber: 212222240053
 ```
 
 ## Sourcecode.java:
-
 ```
-import java.util.Scanner;
-
-public class MultipleCheck {
-    static boolean isMultipleOfTen(int num) {
-        return num % 10 == 0;
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        if (isMultipleOfTen(num)) {
-            System.out.println(num + " is a multiple of 10.");
-        } else {
-            System.out.println(num + " is not a multiple of 10.");
+import java.util.*;
+public class Main{
+    static int reverse(int num){
+        int revnum=0;
+        while(num!=0){
+            int digit=num%10;
+            revnum =revnum*10+digit;
+            num=num/10;
         }
+        return revnum;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int revnumber=reverse(num);
+        System.out.println("Reversed number: "+revnumber);
     }
 }
 ```
 
-## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/0e359754-fe37-4d95-8947-720d90ddccbe)
+
+
+
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/9657e80e-c264-4b2b-abd1-c8bf1b86f284)
+
 
 
 ## RESULT:
-Thus the java program To Determine if the number is a multiple of 10 using static method has been executed successfully.
+Thus the java program for Reverse a Number Using static function has been executed successfully.
 
