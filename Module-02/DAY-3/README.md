@@ -1,24 +1,25 @@
 # Ex.No:2(C)    SINGLE ARRAY
 
 ## AIM:
-To create a java program to read 5 values and display the all 5 values from array using single dimensional array.
-
+To Write a Java program that creates integer array of 10 elements, accepts 10 values of arrays and print the array values in reverse order.
 ## ALGORITHM :
-1.	Start the program.
-2.	2.	Import the `Scanner` class from the `java.util` package
-3.	Define a class named `ArrayExample`
-4.	Inside the `main` method:
--	a) Create a `Scanner` object called `scanner` to take user input
--	b) Declare an integer array `values` of size 5
--	c) Use a `for` loop to iterate from `i = 0` to `i < 5`:
--   d) Take input from the user and store it in `values[i]`
-5.	Print "Elements in Array are :"
-6.	Use another `for` loop to iterate from `i = 0` to `i < 5`:
--	a) Print each element in `values` followed by a space
-7.	Close the `scanner` to release resources
-8.	End
+1.Start
 
+2.Create an integer array Arr of size 10
 
+3.For i from 0 to 9:
+
+4.Read an integer from the user
+
+5.Store the input in Arr[i]
+
+6.Print "Reverse Array:"
+
+7.For k from 9 down to 0:
+
+8.Print Arr[k] followed by a space
+
+9.End
 
 
 
@@ -26,24 +27,36 @@ To create a java program to read 5 values and display the all 5 values from arra
  ```
 /*
 Program to implement a Single Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber:  212222240053
 */
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
-
-
+```
+import java.util.*; 
+public class Main
+{
+    public static void main(String[] args) 
+    { 
+        Scanner sc = new Scanner(System.in); 
+        //System.out.println("Enter 10 array elements:");
+        int Arr[] = new int[10]; 
+        for(int i = 0; i < Arr.length; i++) 
+            Arr[i] = sc.nextInt(); 
+        
+        System.out.println("Reverse Array: "); 
+        for (int k = Arr.length-1; k >= 0; k--) 
+            System.out.print(Arr[k] + " "); 
+    } 
+}
+```
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/e4bc3402-84ba-43c1-8a6d-29835e70c1ad)
 
 
 
 ## RESULT:
-Thus, the Java program Thus the java program to read 5 values and display the all 5 values from array using single dimensional  was executed successfully.
+Thus,  a Java program that creates integer array of 10 elements, accepts 10 values of arrays and print the array values in reverse order was executed successfully.
 
 
