@@ -43,7 +43,7 @@ public class Main
 
 ## OUTPUT:
 
-![image(https://github.com/lisianathiruselvan/19AI307_JAVA/blob/1a33fc6f1003a21f65e5180d1e2ea8264a8f3149/Screenshot%202025-05-02%20160247.png)
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/1a33fc6f1003a21f65e5180d1e2ea8264a8f3149/Screenshot%202025-05-02%20160247.png)
 
 ## RESULT:
 Thus the java program use append() method concatenates the given argument with this String and use stringbuffer class was executed successfully.
