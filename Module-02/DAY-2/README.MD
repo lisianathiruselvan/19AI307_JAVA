@@ -47,7 +47,7 @@ public class Main{
 ```
 
 ## OUTPUT:
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/58fa579e789e1ec03d40b173f390811bc111d9be/Module-02/DAY-2/Screenshot%202025-05-02%20152912.png)
 
 
 ## RESULT:
