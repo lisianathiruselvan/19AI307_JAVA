@@ -1,50 +1,54 @@
 # Ex.No:4(D) FINAL & STATIC IN JAVA
 
 ## AIM:
-   To create a Java program to perform final & static keyword for below situation Employee object contains member 'Emp_Id'. It contains object named name, which contains its own informations such as Fname, Mname, Lname.
+   To create a Java program to Create a final class 'Company' with Company Name,Company Id and Address as its member, make Company_Id as final variable with value "ED12G45" and write print() to display its member in the Output.
  
 ## ALGORITHM :
-1.	Start the Program.
-2.	Define class `Name`:
--	a) Declare three `String` variables: `Fname`, `Mname`, and `Lname`
--	b) Define method `dispName(String fn, String mn, String ln)`:
--	i) Print the full name using the passed parameters `fn`, `mn`, and `ln`
-3.	Define class `Employee`:
--	a) Declare an integer variable `Emp_Id`
--	b) Create an instance of `Name` called `obj`
--	c) Define method `disp(int id)`:
--	i) Print the employee ID
--	ii) Create a new `Name` object and call `dispName("B", "Leo", "John")` to display the name
-4.	Define `Main` class with `main` method:
--	a) Create an `Employee` object `emp`
--	b) Call `emp.disp(101)` to display the employee details
-5.	End
+1.	Define a final class Company with three final attributes: id, name, and city.
 
+2. Create a display() method in Company to print the company details.
 
+3. In the main() method, create an object of the Company class.
 
+4. Call the display() method using the object.
 
+5. Print the company's ID, name, and city to the console.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a final & Static using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber:  212222240053
 */
 ```
 
 ## Sourcecode.java:
+```
+final class Company{
+    final String id="ED12G45";
+    final String name="ABC Foods";
+    final String city="Chennai";
+    
+    void display(){
+        System.out.println("Company Details are,\nId is "+id+"\nName is "+name+"\nAddress is "+city);
+    }
+}
+public class demo{
+    public static void main(String[] args){
+        Company cp=new Company();
+        cp.display();
+    }
+}
 
-
-
-
-
+```
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/506e65c7-5f3a-40b8-b7f5-c7a70ca0dd1c)
 
 
 ## RESULT:
-Thus, the java program to perform final & static keyword was executed successfully.
+Thus, the java program to perform final  keyword was executed successfully.
