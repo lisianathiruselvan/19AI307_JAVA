@@ -1,50 +1,72 @@
 # Ex.No:4(E)  PARAMETERIZED CONSTRUCTOR
 ## AIM:
-To write a parameterized constructor in the Employee class that initializes name and designation, and then call getter methods in the main() method of another class (Sample) to display the values.
+To Create a class Box that uses a parameterized constructor to initialize the dimensions of the box. The dimensions of the Box are width, height, depth.[5,4,3]
 
 ## ALGORITHM :
 
-	1.	Start the program.
-2.	Define a class Employee:
-    a.	  Declare two private string variables: name and designation.
-3.	Create a parameterized constructor in Employee:
-4.	Accept two parameters: name and designation.
-5.	Assign the parameters to the class fields.
-6.	Define two getter methods in the Employee class:
-     a.	getName() – returns the value of name.
-     b.	getDesg() – returns the value of designation.
-7.	Create another class Sample with the main method.
-8.	Inside the main method:
-     a.	Create an object of Employee using the constructor and pass "John" and "Asst.Manager" as arguments.
-     b.	Call getName() and store the result in a variable empName.
-     c.	Call getDesg() and store the result in a variable empDesg.
-9.	Print the values of empName and empDesg.
-10.	End the program
+1. Define a Box class with height, width, and depth as instance variables.
+
+2. Create a constructor to initialize these variables using the this keyword.
+
+3. Define a volume() method to compute and print the volume (h × w × d).
+
+4. In main(), create a Box object with specific dimensions.
+
+5. Call the volume() method to display the calculated volume.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Parameterized Constructor Using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
 
+```
+public class Box
+{
+    int h;
+    int w;
+    int d;
+
+    Box(int h,int w,int d)
+    {
+         this.h = h;
+         this.w = w;
+         this.d = d;
+
+    }
+    void volume()
+    {
+           System.out.println("Volume is "+this.h*this.w*this.d+" units");
+
+    }
 
 
+public static void main(String[] args)
+{
+   Box b = new Box(5,4,3);
+   b.volume();
+}
+}
 
 
+```
 
 
 ## OUTPUT:
 
 
+![image](https://github.com/user-attachments/assets/e8dfab8b-d1b5-4c5a-96f4-7e818c672737)
+
+
 
 ## RESULT:
-Thus, the  java program was successfully demonstrates the use of a parameterized constructor to initialize class fields.
+Thus, the  java program was successfully demonstrates the use of a parameterized constructor to initialize class box.
 
  
 
