@@ -71,7 +71,7 @@ public class Main {
 
 
 ## OUTPUT:
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/a67b99982aa5c437bad96c040bf637f55d35f606/Module-04/DAY-2/Screenshot%202025-05-21%20203455.png)
 
 
 ## RESULT:
