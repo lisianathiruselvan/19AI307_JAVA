@@ -1,22 +1,21 @@
 # Ex.No:7(B) EXCEPTION HANDLING-FINALLY
 ## AIM:
-To Write a Java program to demonstrate control flow of try-catch-finally clause when NumberFormat Exception occur in try block and handled in catch block
-
+To Write a Java program to demonstrate control flow of try-catch-finally clause when ArithmeticException occur in try block and handled in catch block
 
 ## ALGORITHM :
 1.	Start the Program
-2.	Import `java.util.*` for input handling
-3.	Define class `HelloWorld`:
--	a) In `main` method, create `Scanner` object `sc` for input
-4.	Use `try` block to:
--	a) Read a string `str` from user input
--	b) Convert `str` to an integer using `Integer.parseInt()` and print the result
-5.	Use `catch` block to handle `NumberFormatException`:
--	a) If the string can't be converted to an integer, print the exception message
-6.	Use `finally` block to:
--	a) Print "Finally block executed"
-7.	After the `try-catch-finally` block, print "Outside try-catch-finally clause"
-8.	End
+
+2.	Read an integer input from the user.
+
+3. Try dividing a fixed number a = 100 by the input b.
+
+4. Catch ArithmeticException if division by zero occurs and print the exception.
+
+5. Execute the finally block to print a message, whether or not an exception occurred.
+
+6. Continue with the rest of the program after the try-catch-finally block.
+
+7.	End
 
 
 
@@ -24,18 +23,42 @@ To Write a Java program to demonstrate control flow of try-catch-finally clause 
  ```
 /*
 Program to implement a Exception Handling-Finally using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) 
+    {
+      
+       Scanner sc=new Scanner(System.in);
+      try {
+         int b=sc.nextInt();
+         int a=100;
+          int c = a/b;
+          System.out.println("Valid Statement :" +c);
+      }
+         
+        catch(ArithmeticException ex)
+        {
+            System.out.println("Exception: " +ex);
+        }
+         
+        finally
+        {
+            System.out.println("Finally block executed");
+        }
+         
+        // rest program will be executed
+        System.out.println("Outside try-catch-finally clause");
+    }
+}
 
-
-
-
-
-
+```
 
 ## OUTPUT:
 
