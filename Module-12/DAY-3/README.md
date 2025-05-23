@@ -1,21 +1,16 @@
 # Ex.No:12(C)             JAVA STACK & VECTOR
  ## AIM :
 
-To Write a java program to create vector and read the elements for two vector in java collection.(Use equals method )
+To Write a java program to read and print the elements  and to fetching the specific element from the index of 3 using vector in java collection.(Use elementAt() method)
 ## ALGORITHM :
 
 1.	Start the Program
-2.	In `main`:
--	a) Create a `Scanner` object to read input.
--	b) Read an integer `n1` (the size of the first vector).
--	c) Initialize `Vector<String> vector1`.
--	d) Use a `for` loop to read `n1` strings and add each to `vector1`.
-3.	Repeat similar steps for a second vector:
-a)	Read an integer `n2` (size of the second vector).
-b)	Initialize `Vector<String> vector2`.
-c)	Use a `for` loop to read `n2` strings and add each to `vector2`.
-4.	Use `equals()` to compare `vector1` and `vector2` and print whether they are equal.
-5.	End.
+2.	Create a Vector to store strings from user input.
+3.	Read the number of input pairs and add two strings per iteration.
+4.	Print the complete vector after input is collected.
+5.	Access and display the element at the 4th position (index 3).
+6.	End the program.
+7.	End.
 
 
 
@@ -23,26 +18,44 @@ c)	Use a `for` loop to read `n2` strings and add each to `vector2`.
  ```
 /*
 Program to implement a JAVA STACK & VECTOR  using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.*;
+public class VectorDemo {
+	public static void main(String args[])
+	{
+		Vector<String> vec_tor = new Vector<String>();
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+	    for(int i=0;i<size;i++)
+	    {
+		vec_tor.add(sc.next());
+	    vec_tor.add(sc.next());
+	    }
+	   	System.out.println("The vector is: " + vec_tor);
 
+	    System.out.println("The element is: "
+                           + vec_tor.elementAt(3));
+		}
+}
 
-
-
-
+```
 
 ## OUTPUT:
+
+![image](https://github.com/user-attachments/assets/6f0a05a8-89e3-4103-90de-0d91c8fbf481)
 
 
 
 ## RESULT:
 
-Thus the java program to create vector and read the elements for two vector in java collection.(Use equals method ) was executed successfully.
+Thus the java program to read and print the elements  and to fetching the specific element from the index of 3 using vector in java collection.(Use elementAt() method) was executed successfully.
 
 
 
