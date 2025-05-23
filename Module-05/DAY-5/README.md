@@ -8,19 +8,12 @@ Physics
 Teaching
 ## ALGORITHM :
 1.	Start the program.
-2.	Create a class ArrayData:
-a.	Declare an integer array and a variable for size.
-b.	Create a method to read array elements from the user.
-3.	Create another class ArrayOperation:
-a.	Create a method findMax() that accepts an ArrayData object.
-b.	Loop through the array and find the largest element.
-4.	In the main() method of a class Main:
-a.	Create an object of ArrayData and read the input.
-b.	Create an object of ArrayOperation and call findMax() by passing the ArrayData object.
-5.	Display the largest number.
-6.	End the program.
-
-
+2.	Create an object of the PhysicsTeacher class.
+3. Call the printTitle() method inherited from the Beginnersbook class to print the title.
+4. Call the printRole() method inherited from the Teacher class to print the role.
+5. Call the printSubject() method of the PhysicsTeacher class to print the subject.
+6. Call the printSkill() method of the PhysicsTeacher class to print the skill.
+7.	End the program.
 
 ## PROGRAM:
  ```
