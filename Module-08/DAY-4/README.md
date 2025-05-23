@@ -1,17 +1,14 @@
 # Ex.No:8(D) BUFFER INPUT/OUTPUT STREAM
 
 ## AIM:
- To create a java program file for displaying the data from the file after skip method using FileInputStream & BufferedInputStream.
+ To Write a java Program for reading the characters from the user and print in the display screen using Buffered InputStream
 
 ## ALGORITHM :
-1.	Import java.io.* and java.util.* for file handling and user input.
-2.	Create a file named sample.txt and write "This is a line of text inside the file." using FileWriter.
-3.	Close the FileWriter to save the content to sample.txt.
-4.	Open sample.txt with a FileInputStream wrapped in a BufferedInputStream for efficient reading.
-5.	Prompt the user to enter the number of bytes to skip using Scanner.
-6.	Skip the specified number of bytes in the file and print the remaining content.
-7.	Close the BufferedInputStream and FileInputStream to release system resources.
-
+1.	Create a BufferedInputStream object to read input from the keyboard (System.in).
+2.	Display a prompt to the user for input.
+3.	Read input character by character using read() method until end-of-file (-1) is detected.
+4.	Convert each byte to a character and print it.
+5.	Close the input stream in the finally block to release resources.
 
 
 
@@ -19,24 +16,42 @@
  ```
 /*
 Program to implement a Buffer Input/Output Stream using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
+```
+import java.io.*;  
+import java.io.*;
+public class Main  
+{
+  public static void main(String[] args) throws IOException
+  {
+   BufferedInputStream bf = new BufferedInputStream(System.in)   ;
+    try{
+          int i;
+        while((i=bf.read())!=-1)
+        {
+            char c=(char) i;
+            System.out.println(c);  
+    }
+    }
+finally{
+        bf.close();
+}   
+}   
+}
+```
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/9ccde91f-637e-4eba-9b8a-b9f945423d1b)
 
 
 ## RESULT:
-Thus, the java program file for displaying the data from the file after skip method using FileInputStream & BufferedInputStream was executed and done successfully.
+Thus, the java program file for reading the characters from the user and print in the display screen using Buffered InputStream was executed and done successfully.
 
 
