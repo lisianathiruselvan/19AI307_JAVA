@@ -4,10 +4,15 @@ To create a Java Program to implement Method Local Inner Class.
 
 ## ALGORITHM :
 1.Define the outer class Department with a member string variable.
+
 2.Inside the display() method, define a local string variable.
+
 3.Create a local inner class Inner inside the display() method.
+
 4.Inside the Inner class, define a method print() that accesses both the outer class variable and the local method variable.
+
 5.Instantiate the Inner class and call its print() method to display the values.
+
 6.	End
 
 ## PROGRAM:
