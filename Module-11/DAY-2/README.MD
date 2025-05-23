@@ -5,15 +5,12 @@ To Create a java program to retrieve the key and value from hashmap and display 
 ## ALGORITHM :
 
 1.	Start
-2.	Import `java.util.*`
-3.	Define class `A` with `main` method:
--	a) Initialize `Scanner` and read integer `n`
--	b) Create a `Hashtable` named `hash` to store integer keys and string values
-4.	Use a loop to:
--	a) Read an integer and string from the user
--	b) Add the integer as the key and the string as the value in `hash`
-5.	Use an enhanced `for` loop to iterate through `hash` and print each key-value pair
-6.	End
+2.	Create a HashMap to store integer keys and string values.
+3. Read key-value pairs from user input and insert them into the map.
+4. Iterate over the map keys and print each key-value pair.
+5. Display the size of the map before and after clearing it.
+6. Clear the map to remove all entries.
+7.	End
 
 
 
@@ -54,14 +51,8 @@ System.out.println("Size of Map: " + map.size());
 }  
 ```
 
-
-
-
-
-
 ## OUTPUT:
-
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/25f233883ca5e83685560476c1ca3fcefbfff178/Module-11/DAY-2/image.png)
 
 ## RESULT:
 Thus a java program to retrieve the key and value from hashmap and display the size of the hashmap and clear the hashmap using clear method concepts was executed successfully.
