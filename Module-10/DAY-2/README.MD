@@ -21,14 +21,37 @@ To Create a java program to perform linkedlist, read size of the list , read the
  ```
 /*
 Program to implement a JAVA LINKED LIST using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
 
+public class Main {
+  public static void main(String[] args) {
+   Scanner sc=new Scanner(System.in);
+    LinkedList<Integer> cars = new LinkedList<Integer>();
+    int n=sc.nextInt();
+    for(int i=0;i<n;i++)
+    {
+    cars.add(sc.nextInt());
+    }
+    
 
+     System.out.println("LinkedList: "+ cars);
+         
+         
+        Object[] a = cars.toArray();
+       
+        System.out.print("After converted LinkedList to Array: ");
+        for(Object element : a)
+            System.out.print(element+" ");
+  }
+}
+```
 
 
 
