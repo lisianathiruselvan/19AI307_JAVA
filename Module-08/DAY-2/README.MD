@@ -1,7 +1,6 @@
 # Ex.No:8(B) IO-FILE READER/WRITER
 ## AIM:
-To create a java program to append a NUMBER in a file “testout.txt” using Writer.
-
+To Implement a Java Program to append a String in a file "testout.txt" using Writer
 
 ## ALGORITHM :
 1.	It creates a file testout.txt, writes "Welcome to Java File Concept -Reader" to it, and displays this initial content.
@@ -23,8 +22,23 @@ RegisterNumber:
 ```
 
 ## Sourcecode.java:
+```
+ 
+             try
+             {
+                {{
+                    String str="Hi Everybody";
+                    Writer s=new FileWriter("testout.txt",true);
+                    s.append(str);
+                    s.close();
+                    System.out.println("Append the character in the File Successfully");
+                }}
 
-
+               
+  
+                }
+                catch(Exception e){System.out.println(e);}
+```
 
 
 
@@ -35,7 +49,7 @@ RegisterNumber:
 
 
 ## RESULT:
-Thus, the java program to append a NUMBER in a file “testout.txt” using Writer.was executed and verified successfully
+Thus, the java program to append a String in a file "testout.txt" using Writerwas executed and verified successfully
 
 
 
