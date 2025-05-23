@@ -19,21 +19,41 @@ To Create a List interface implemented by arraylist class , adding n elements to
  ```
 /*
 Program to implement a JAVA LIST INTERFACE using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
 
 
+public class GFG {
 
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		List<String> al = new ArrayList<>();
+        int size=sc.nextInt();
+        for(int i=0;i<size;i++)
+        {
+				al.add(sc.next());
+        }
 
-
-
+		for (int i = 0; i < size; i++) {
+  
+            
+            System.out.println(al.get(i) + " ");
+        }
+	
+	}
+}
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/f3fc8af0-23c3-46d5-b5fb-b961b6f5194d)
 
 
 ## RESULT:
