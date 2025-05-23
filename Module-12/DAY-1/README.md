@@ -1,21 +1,15 @@
 # Ex.No:12(A)         JAVA TREE MAP
 ## AIM:
- To implement a Java program to associate the specified value with the specified key in a Tree Map.
+ To Write a Java program to copy a Tree Map content to another Tree Map content.
 
 ## ALGORITHM :
 
 1.	Start the Program
-2.	Import `java.util.*` and `java.util.Map.Entry`
-3.	Define `Example6` class with `main` method:
--	a) Initialize `TreeMap<String, String> tree_map1`
--	b) Read integer `size` for entries count.
-4.	Use a loop to:
--	a) Read `String` values `n1` and `s1`
--	b) Insert each pair into `tree_map1`
-5.	Print `tree_map1` as `"Original TreeMap content: "`
-6.	Define `sort_key` class that implements `Comparator<String>`:
--	Override `compare` method to compare `String` values `str1` and `str2` using
-`compareTo`
+2.	Create two TreeMap objects to store string key-value pairs in sorted order.
+3.	Read and insert entries into map1 and map2 from user input.
+4.	Display the contents of both maps before merging.
+5.	Use putAll() to copy all entries from map2 into map1.
+6.	Print the updated map1 after merging with map2.
 7.	End
 
 
@@ -24,22 +18,48 @@
  ```
 /*
 Program to implement a JAVA TREE MAP using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
 
+public class TreeMapCopyExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        int n1 = sc.nextInt();
+        TreeMap<String, String> map1 = new TreeMap<>();
+        for (int i = 0; i < n1; i++) {
+            String key = sc.next();
+            String value = sc.next();
+            map1.put(key, value);
+        }
 
+        int n2 = sc.nextInt();
+        TreeMap<String, String> map2 = new TreeMap<>();
+        for (int i = 0; i < n2; i++) {
+            String key = sc.next();
+            String value = sc.next();
+            map2.put(key, value);
+        }
 
+        System.out.println("Tree Map 1: " + map1);
+        System.out.println("Tree Map 2: " + map2);
 
-
+        map1.putAll(map2);
+        System.out.println("After coping map2 to map1: " + map1);
+    }
+}
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/309ea768-e76f-4fbc-96cd-bb1d8e017e71)
 
 
 ## RESULT:
-Thus the Java program to associate the specified value with the specified key in a Tree Map was executed successfully.
+Thus  a Java program to copy a Tree Map content to another Tree Map content. was executed successfully.
