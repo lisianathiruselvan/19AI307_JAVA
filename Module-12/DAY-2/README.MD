@@ -3,17 +3,17 @@
 To Write a Java program to sort a list of characters in reverse order using Comparable interface.Apply LinkedList concepts.
 ## ALGORITHM :
 1.	Start the Program.
-2.	Import `java.util.*` and `java.util.Map.Entry`
-3.	Define `Example6` class with `main` method:
--	a) Initialize `TreeMap<String, String> tree_map1`
--	b) Read integer `size` for entries count.
-4.	Use a loop to:
--	a) Read `String` values `n1` and `s1`
--	b) Insert each pair into `tree_map1`
-5.	Print `tree_map1` as `"Original TreeMap content: "`
-6.	Define `sort_key` class that implements `Comparator<String>`:
--	Override `compare` method to compare `String` values `str1` and `str2` using
-`compareTo`
+
+2.	Create a LinkedList to store strings from user input.
+
+3. Read the number of elements and add them to the list.
+
+4. Sort the list using a custom comparator based on natural string order.
+
+5. Iterate through the sorted list.
+
+6. Print each element from the list.
+
 7.	End
 
 
@@ -58,7 +58,7 @@ public class Main {
 
 ## OUTPUT:
 
-
+https://github.com/lisianathiruselvan/19AI307_JAVA/blob/e5e04019d3dee804b994573ea770b01753118523/Module-12/DAY-2/image.png
 
 ## RESULT:
 Thus a Java program to sort a list of characters in reverse order using Comparable interface.Apply LinkedList concepts.was executed successfully
