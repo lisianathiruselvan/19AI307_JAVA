@@ -61,8 +61,7 @@ public class HelloWorld {
 ```
 
 ## OUTPUT:
-
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/f6b21c1849c1ce23b97ec26d26a68fd9b460a8e2/Module-07/DAY-2/image.png)
 
 ## RESULT:
 Thus the Java program to demonstrate control flow of try-catch-finally clause when NumberFormatException occur in try block and handled in catch block was executed successfully.
