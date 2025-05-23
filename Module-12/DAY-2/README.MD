@@ -58,7 +58,7 @@ public class Main {
 
 ## OUTPUT:
 
-https://github.com/lisianathiruselvan/19AI307_JAVA/blob/e5e04019d3dee804b994573ea770b01753118523/Module-12/DAY-2/image.png
+![Iimage](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/e5e04019d3dee804b994573ea770b01753118523/Module-12/DAY-2/image.png)
 
 ## RESULT:
 Thus a Java program to sort a list of characters in reverse order using Comparable interface.Apply LinkedList concepts.was executed successfully
