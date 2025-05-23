@@ -74,8 +74,7 @@ public class Main {
 
 ## OUTPUT:
 
-
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/067bd2a3bf774d642c582af5d8271824d0d26963/Module-05/DAY-2/Screenshot%202025-05-21%20211324.png)
 
 ## RESULT:
 Thus a java program to find the given number is armstrong or not using tightly encapsulated class was executed successfully.
