@@ -3,12 +3,13 @@
 To Implement a Java Program to append a String in a file "testout.txt" using Writer
 
 ## ALGORITHM :
-1.	It creates a file testout.txt, writes "Welcome to Java File Concept -Reader" to it, and displays this initial content.
-2.	It reopens the file in append mode and adds "1234567890" at the end of the existing content.
-3.	It reads the file's content (Welcome to Java File Concept -Reader1234567890) and displays it.
-4.	The file is deleted using file.delete().
-5.	It tries to read the file again, but this throws an exception since the file no longer exists.
+1.	FileWriter("testout.txt", true) opens the file in append mode.
 
+2. s.append(str) adds the string at the end of the file.
+
+3. s.close() closes the file resource.
+
+4. try-catch block handles any possible exceptions.
 
 
 
@@ -16,8 +17,8 @@ To Implement a Java Program to append a String in a file "testout.txt" using Wri
  ```
 /*
 Program to implement a IO File Reader/Writer using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
@@ -45,8 +46,7 @@ RegisterNumber:
 
 
 ## OUTPUT:
-
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/109a6544989d62a8a3e19383685ecb766368172b/Module-08/DAY-2/image.png)
 
 ## RESULT:
 Thus, the java program to append a String in a file "testout.txt" using Writerwas executed and verified successfully
