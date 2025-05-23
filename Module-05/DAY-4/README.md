@@ -19,21 +19,41 @@
  ```
 /*
 Program to implement a IS-A RELATIONSHIP AND HAS-A RELATIONSHIP using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
 
+class FactorialCalculator {
+    public int computeFactorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
 
+        FactorialCalculator calculator = new FactorialCalculator(); 
+        int result = calculator.computeFactorial(number);
 
-
-
+        System.out.println("Factorial is:" + result);
+    }
+}
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/bd477086-44f2-4bc1-9519-b93d46241879)
 
 
 ## RESULT:
