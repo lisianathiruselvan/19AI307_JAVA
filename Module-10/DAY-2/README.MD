@@ -59,7 +59,7 @@ public class Main {
 
 ## OUTPUT:
 
-
+![image](https://github.com/lisianathiruselvan/19AI307_JAVA/blob/a129790818b40ac6d95fac1987bca58dc6b62e2f/Module-10/DAY-2/image.png)
 
 ## RESULT:
 Thus the Java program of the creation of a linkedlist was executed successfully.
