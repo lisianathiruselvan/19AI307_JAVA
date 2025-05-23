@@ -5,17 +5,18 @@ To Develop a Java program to perform Multilevel Inheritance
 
 ## ALGORITHM :
 1.	Start the Program.
-2.	Define class `Shapes`:
--	a) Method `print_shape()` to print "Shapes Class"
-3.	Define class `Circle` that extends `Shapes`:
--	a) Declare integer `rad`
--	b) Method `get()` to read `rad` from user input
-4.	Define class `Area` that extends `Circle`:
--	a) Method `cal()` to calculate `result = 3.14 * rad * rad` and print "Area of Circle is " followed by `result`
-5.	In `Main` class `main` method:
--	a) Create `Area` object `obj`
--	b) Call `print_shape()`, `get()`, and `cal()` on `obj` to display shape type, read radius, and calculate area
-6.	End
+
+2.	Create an object of the Alto class.
+
+3. Call display() method from the Vehicle class using the Alto object.
+
+4. Call print() method from the Car class using the same object.
+
+5. Call show() method from the Alto class.
+
+6. Display output for each method to confirm multi-level inheritance.
+
+7.End
 
 
 ## PROGRAM:
