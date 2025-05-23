@@ -1,39 +1,57 @@
 # Ex.No:12(E)  JAVA DEQUEUE
 
 ## AIM:
-To demonstrate how to remove and display the first element from a Deque using the pollFirst() method in Java Collections with String values.
+To Write a java program to display the added elements from the Dequeue using java collection.
 ## ALGORITHM :
 
-1.	Import java.util.*.
-2.	Create a Deque using LinkedList.
-3.	Add several string elements to the deque.
-4.	Use pollFirst() to remove and return the first element.
-5.	Print the removed element.
-6.	Display the remaining elements in the deque.
+1.	Create a Deque using LinkedList to store integers.
+2.	Read the number of elements and add them to the deque.
+3.	Display the current elements of the deque.
+4.	Add the element 150 to the end of the deque using addLast().
+5.	Print the deque after modification.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a JAVA DEQUEUE
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
 
+public class deQueueDemo {
+	
 
-
-
-
-
+	public static void main(String args[])
+	{
+	
+		Deque<Integer> dq = new LinkedList<Integer>();
+        
+	    Scanner sc=new Scanner(System.in);
+	    int size=sc.nextInt();
+	    for(int i=0;i<size;i++){
+	        dq.add(sc.nextInt());
+	    }
+	    System.out.println("Display the element of Dequeue:");
+		System.out.println(dq);
+        System.out.println("Display the element of Dequeue after add first element :");
+        dq.addLast(150);
+		System.out.println(dq);
+		
+	}
+}
+```
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/54ec2c93-b95d-4b88-91ea-67e6f45a6b96)
 
 
 ## RESULT:
 
-Thus the java program successfully demonstrates how to use pollFirst() to remove and display the first element from a Deque of strings.
-
+Thus  a java program to display the added elements from the Dequeue using java collection has been executed successfully.
 
