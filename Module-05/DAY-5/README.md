@@ -1,6 +1,11 @@
-# Ex.No:5(E) HAS-A RELATIONSHIP
+# Ex.No:5(E) IS-A RELATIONSHIP
 ## AIM:
-To implement a  Java Program to Find the Largest or Max Number in Array using has - a relationship.
+To Write a java program to print the given input using is-a relationship.
+Sample Input:
+Beginnersbook
+Teacher
+Physics
+Teaching
 ## ALGORITHM :
 1.	Start the program.
 2.	Create a class ArrayData:
@@ -21,23 +26,54 @@ b.	Create an object of ArrayOperation and call findMax() by passing the ArrayDat
  ```
 /*
 Program to implement a HAS-A RelationShip
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+class Beginnersbook {
+    void printTitle() {
+        System.out.println("Beginnersbook");
+    }
+}
 
+class Teacher extends Beginnersbook {
+    void printRole() {
+        System.out.println("Teacher");
+    }
+}
 
+class PhysicsTeacher extends Teacher {
+    void printSubject() {
+        System.out.println("Physics");
+    }
 
+    void printSkill() {
+        System.out.println("Teaching");
+    }
+}
 
-
+public class Main {
+    public static void main(String[] args) {
+        PhysicsTeacher obj = new PhysicsTeacher();
+        
+        obj.printTitle();
+        obj.printRole();
+        obj.printSubject();
+        obj.printSkill();
+    }
+}
+     
+```
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/95f3a3df-c7a8-415f-bdb5-02b2bc378d75)
 
 
 ## RESULT:
-Thus the java program to Find the Largest or Max Number in Array using has - a relationship was executed successfully. 
+Thus the java program to Write a java program to print the given input using is-a relationship has been implemented successfully
 
