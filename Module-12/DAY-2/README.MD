@@ -1,8 +1,6 @@
 # Ex.No:12(B)   COMPARABLE & COMPARATOR INTERFACE
 ## AIM :
-To Write a java program to compare two elements , if element is greater means display 1 otherwise display -1 use only comparable interface in java collection.
-
-
+To Write a Java program to sort a list of characters in reverse order using Comparable interface.Apply LinkedList concepts.
 ## ALGORITHM :
 1.	Start the Program.
 2.	Import `java.util.*` and `java.util.Map.Entry`
@@ -23,25 +21,47 @@ To Write a java program to compare two elements , if element is greater means di
  ```
 /*
 Program to implement a COMPARABLE & COMPARATOR INTERFACE using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053 
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.*;
 
+public class Main {
+ public static void main(String[] args) {
+ 
+  LinkedList<String> list2 = new LinkedList<String>();
+  Scanner sc=new Scanner(System.in);
+  int size=sc.nextInt();
+  for(int i=0;i<size;i++)
+  {
+  list2.add(sc.next());
+  }
+  list2.sort(new Comparator<String>() {
+   @Override
+   public int compare(String num1, String num2) {    
+    return num1.compareTo(num2);
+   }
+   
+  });
+  
 
-
-
-
-
+  for (String num : list2) {
+   System.out.println(num);
+  }
+ }
+}
+```
 
 ## OUTPUT:
 
 
 
 ## RESULT:
-Thus the java program to compare two elements , if element is greater means display 1 otherwise display -1 use only comparable interface in java collection was executed successfully
+Thus a Java program to sort a list of characters in reverse order using Comparable interface.Apply LinkedList concepts.was executed successfully
 
 
 
