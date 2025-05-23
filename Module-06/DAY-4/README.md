@@ -15,22 +15,38 @@
  ```
 /*
 Program to implement a Packages using Java
-Developed by: 
-RegisterNumber:  
+Developed by: LISIANA T
+RegisterNumber: 212222240053
 */
 ```
 
 ## Sourcecode.java:
+```
+package package1;
 
+public class Message {
+    public void show() {
+        System.out.println("Accessing class from another package!");
+    }
+}
 
+package package2;
 
+// Importing the class from another package
+import package1.Message;
 
-
+public class Main {
+    public static void main(String[] args) {
+        Message msg = new Message();
+        msg.show();
+    }
+}
+```
 
 
 ## OUTPUT:
 
-
+Acessing class from another package!
 
 ## RESULT:
 Thus, the program has accessed the package from another package has been done successfully.
