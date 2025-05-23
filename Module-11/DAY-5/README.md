@@ -4,13 +4,13 @@
 To demonstrate removing a key from a HashMap and printing all remaining key-value pairs
 ## ALGORITHM :
 
-a.	Import java.util.*.
+1.	Import java.util.*.
 
-b.	Create a HashMap and add some key-value pairs.
+2.	Create a HashMap and add some key-value pairs.
 
-c.	Use remove(key) to delete the entry with key 100.
+3.	Use remove(key) to delete the entry with key 100.
 
-d.	Iterate through the map using a for-each loop and display the entries
+4.	Iterate through the map using a for-each loop and display the entries
 
 ## PROGRAM:
  ```
